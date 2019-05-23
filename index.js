@@ -10,3 +10,10 @@ function increaseRankBy(n) {
     nodes[i].innerHTML = parseInt(nodes[i].innerHTML) + n;
   }
 }
+function deepestChild() {
+  let node = document.querySelector('div#grand-node');
+  while (node.hasChildNodes) {
+    node = node.children[0];
+  }
+  return node;
+}
